@@ -2,3 +2,5 @@
 /dist
 /logo 設計稿.svg
 /node_modules
+dist.crx
+dist.pem
