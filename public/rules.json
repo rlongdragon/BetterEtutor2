@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "|https://etutor2.itsa.org.tw/mod/teachingzone/tools.php|",
+      "initiatorDomains": ["etutor2.itsa.org.tw"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]

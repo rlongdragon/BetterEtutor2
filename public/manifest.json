@@ -1,0 +1,41 @@
+{
+  "name": "Better Etutor2",
+  "description": "用來拯救全台大學生的瀏覽器擴充功能",
+  "icons": {
+    "128": "./images/icons/icon128.png",
+    "48": "./images/icons/icon48.png",
+    "16": "./images/icons/icon16.png"
+  },
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./popups/index.html",
+    "default_icon": "./images/icons/icon128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://etutor2.itsa.org.tw/*",
+    "https://etutor2.itsa.org.tw/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "block_tools_request_rule",
+      "path": "rules.json",
+      "enabled": true
+    }]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://etutor2.itsa.org.tw/mod/teachingzone/problem_view*"],
+      "js": ["./contentScripts/problem_view.js"]
+    }
+  ]
+}

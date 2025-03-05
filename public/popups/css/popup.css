@@ -1,0 +1,40 @@
+body {
+  width: max-content;
+}
+
+p {
+  margin: 0.5em;
+}
+
+input[type="checkbox"] {
+  vertical-align: -.075em;
+}
+
+label.setting_label {
+  display: block;
+}
+ 
+button.action {
+  position: relative;
+  top: 0px;
+
+  padding: 6px;
+  border: none;
+  border-bottom: 6px solid #24a428;
+  border-radius: 4px;
+  background-color: #28b62c;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+button.action:hover {
+  background-color: hsl(122, 64%, 45%);
+  top: 2px;
+  margin-bottom: 2px;
+  border-bottom: 4px solid #24a428;
+}
+
+button.action:active {
+  outline: 4px solid #28b62c77;
+}
