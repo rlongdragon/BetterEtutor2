@@ -4,7 +4,7 @@
     "chrome-types": "^0.1.343"
   },
   "name": "better_etutor2",
-  "version": "0.0.1",
+  "version": "0.0.2-beta",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch src --watch public --ext ts,js,json,html,css --exec npm run build",

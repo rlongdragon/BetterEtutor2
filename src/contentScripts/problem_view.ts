@@ -533,10 +533,7 @@ ${
       </div>
       <div style="flex: 1; padding: 0;" class="content">
         ${CopyButton}
-        <pre style="padding: 10px 15px;margin: 0">16 12
-25 15
-1 3
-3 6</pre>
+        <pre style="padding: 10px 15px;margin: 0">${testCase.expectedOutput}</pre>
       </div>
     </div>
     </div>
