@@ -6,7 +6,8 @@
     "48": "./images/icons/icon48.png",
     "16": "./images/icons/icon16.png"
   },
-  "version": "0.0.2-beta",
+  "version": "0.0.2",
+  "version_name": "0.0.2-beta",
   "manifest_version": 3,
   "action": {
     "default_popup": "./popups/index.html",
